@@ -1,12 +1,20 @@
 spring:
   # 配置数据库连接池
   datasource:
-    url: jdbc:mysql://10.0.0.53:3306/basic_project?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false
-    username: root
-    password: 1470634109
+    url: jdbc:mysql://10.200.200.227:3306/msgcenteradmin?autoReconnect=true&characterEncoding=UTF-8
+    username: msgcenter
+    password: msgcenter
+    driver-class-name: com.mysql.jdbc.Driver
+
   ### 配置Redis
   redis:
-    database: 0
-    host: 10.0.0.32
-    port: 6379
-    password: 1470634109
+    cluster:
+      nodes: 10.200.192.7:7000,10.200.192.7:7001,10.200.192.7:7002,10.200.192.7:7003,10.200.192.7:7004,10.200.192.7:7005
+    prefix: dev_outer
+    password: 123456@rds
+    ignoreRedis: false
+
+jwt:
+  secret: crc.com.hk
+  expiration: 1200
+

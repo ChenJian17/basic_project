@@ -20,10 +20,7 @@ import java.util.Objects;
 
 
 /**
- * @author 黄训辉
- * Date: Created in 2018/3/22 11:02
- * Utils: Intellij Idea
- * Description: 全局异常处理
+ *
  */
 @Slf4j
 @RestControllerAdvice

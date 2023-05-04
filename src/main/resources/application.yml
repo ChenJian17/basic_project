@@ -50,3 +50,8 @@ swagger:
   description: 接口文档
   # 扫描的包路径
   basePackage: com.hxh.basic.project.controller
+
+# log4j配置文件
+logging:
+  config: classpath:./log4j2.xml
+

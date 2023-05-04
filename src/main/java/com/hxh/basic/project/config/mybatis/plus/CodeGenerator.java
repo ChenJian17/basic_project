@@ -22,7 +22,7 @@ public class CodeGenerator {
     /**
      * 数据库链接地址
      */
-    private static final String URL = "jdbc:mysql://10.0.0.53:3306/basic_project?useUnicode=true&useSSL=false&characterEncoding=utf8";
+    private static final String URL = "jdbc:mysql://127.0.0.1:3306/basic_project?useUnicode=true&useSSL=false&characterEncoding=utf8";
 
     /**
      * 驱动
